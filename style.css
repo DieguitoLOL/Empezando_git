@@ -1,0 +1,58 @@
+*{
+    font-family: 'Epilogue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: gray;
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+    width: 90%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.opciones{
+    display: flex;
+    gap: 50%;
+    align-items: center;
+}
+.opciones_desplegables{
+    display: flex;
+    gap: 30%;
+}
+.Logueos{
+    display: flex;
+    gap: 30%;
+}
+article{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 14vh;
+}
+.iconos{
+    display: flex;
+    align-items: center;
+    width: 35vw;
+    justify-content: space-between;
+    border: 2px solid green;
+}
+.imagen_fondo img{
+    height: 75vh;
+    width: 100%;
+}
