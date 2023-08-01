@@ -1,9 +1,10 @@
 *{
     font-family: 'Epilogue', sans-serif;
+    font-weight: 700;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    color: gray;
+    color: hsl(0, 0%, 41%);
 }
 main{
     display: flex;
@@ -15,7 +16,7 @@ main{
 section{
     display: flex;
     flex-direction: column;
-    gap: 7vh;
+    gap: 10vh;
     width: 90%;
 }
 header{
@@ -35,24 +36,45 @@ header{
     display: flex;
     gap: 30%;
 }
+.registro{
+    margin-top: -14px;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+}
 article{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+}
+h1{
+    color: hsl(0, 0%, 8%);
+    font-size: 80px;
+}
+pre{
+    font-size: 22px;
 }
 .contenido{
     display: flex;
     flex-direction: column;
-    gap: 14vh;
+    gap: 10vh;
+}
+.boton{
+    border: 2px solid hsl(0, 0%, 8%) ;
+    background-color: hsl(0, 0%, 8%);
+    border-radius: 15px;
+    padding: 15px 20px 15px 20px;
+    width: 130px;
+}
+.boton_texto{
+    color: hsl(0, 0%, 98%);
 }
 .iconos{
     display: flex;
     align-items: center;
     width: 35vw;
     justify-content: space-between;
-    border: 2px solid green;
 }
 .imagen_fondo img{
-    height: 75vh;
+    height: 70vh;
     width: 100%;
 }
