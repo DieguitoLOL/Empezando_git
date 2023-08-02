@@ -6,6 +6,9 @@
     box-sizing: border-box;
     color: hsl(0, 0%, 41%);
 }
+body{
+    background-color: rgb(244, 244, 244);
+}
 main{
     display: flex;
     justify-content: center;
@@ -16,7 +19,7 @@ main{
 section{
     display: flex;
     flex-direction: column;
-    gap: 10vh;
+    gap: 9vh;
     width: 90%;
 }
 header{
@@ -28,9 +31,6 @@ header{
     gap: 50%;
     align-items: center;
 }
-.logo{
-    margin: -80px 0px 0px 0px;
-}
 .opciones_desplegables{
     display: flex;
     gap: 30%;
@@ -39,28 +39,40 @@ header{
     display: flex;
     gap: 10px;
     align-items: center;
+    padding-bottom: 15px;
+}
+.selector p:hover{
+    color: black;
+    cursor: pointer;
 }
 .selector img{
-    width: 10px;
+    width: 13px;
     height: 10px;
 }
-.alineamiento{
+
+.componente{
+    position: absolute;
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-.componente{
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+    padding: 20px 12px;
+    border-radius: 5px;
+    background-color: white;
 }
 .lista{
     display: flex;
-    gap: 10px;
+    gap: 20px;
+}
+.lista p{
+    font-weight: lighter;
 }
 .Logueos{
     display: flex;
     gap: 30%;
+}
+.Logueos p:hover{
+    cursor: pointer;
+    color: black;
 }
 .registro{
     margin-top: -14px;
@@ -78,6 +90,7 @@ h1{
 }
 pre{
     font-size: 22px;
+    font-weight: lighter;
 }
 .contenido{
     display: flex;
@@ -90,9 +103,13 @@ pre{
     border-radius: 15px;
     padding: 15px 20px 15px 20px;
     width: 130px;
+    color: white;
 }
-.boton_texto{
-    color: hsl(0, 0%, 98%);
+
+.boton:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
 }
 .iconos{
     display: flex;
