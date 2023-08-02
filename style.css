@@ -58,6 +58,7 @@ header{
     padding: 20px 12px;
     border-radius: 5px;
     background-color: white;
+    display: none;
 }
 .lista{
     display: flex;
@@ -120,4 +121,14 @@ pre{
 .imagen_fondo img{
     height: 70vh;
     width: 100%;
+}
+@media screen and (max-width: 1200px) {
+    .imagen_fondo{
+        content: url(images/image-hero-mobile.png);
+    }
+    article{
+        flex-direction: column-reverse;
+        gap: 10vh;
+        align-items: center;
+    }
 }
