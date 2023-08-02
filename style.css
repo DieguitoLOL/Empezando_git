@@ -28,9 +28,35 @@ header{
     gap: 50%;
     align-items: center;
 }
+.logo{
+    margin: -80px 0px 0px 0px;
+}
 .opciones_desplegables{
     display: flex;
     gap: 30%;
+}
+.selector{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.selector img{
+    width: 10px;
+    height: 10px;
+}
+.alineamiento{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.componente{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.lista{
+    display: flex;
+    gap: 10px;
 }
 .Logueos{
     display: flex;
