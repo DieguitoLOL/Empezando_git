@@ -37,6 +37,7 @@ header{
 }
 .selector{
     display: flex;
+    user-select: none;
     gap: 10px;
     align-items: center;
     padding-bottom: 15px;
@@ -49,7 +50,9 @@ header{
     width: 13px;
     height: 10px;
 }
-
+.flecha:hover{
+    cursor: pointer;
+}
 .componente{
     position: absolute;
     display: flex;
@@ -60,6 +63,14 @@ header{
     background-color: white;
     display: none;
 }
+
+.componente.activar{
+    display: flex;
+}
+.selector img:hover{
+    cursor: pointer;
+    content: url(images/icon-arrow-up.svg);
+} 
 .lista{
     display: flex;
     gap: 20px;
@@ -69,6 +80,7 @@ header{
 }
 .Logueos{
     display: flex;
+    user-select: none;
     gap: 30%;
 }
 .Logueos p:hover{
@@ -89,7 +101,7 @@ h1{
     color: hsl(0, 0%, 8%);
     font-size: 80px;
 }
-pre{
+.texto{
     font-size: 22px;
     font-weight: lighter;
 }
@@ -105,6 +117,7 @@ pre{
     padding: 15px 20px 15px 20px;
     width: 130px;
     color: white;
+    user-select: none;
 }
 
 .boton:hover{
@@ -122,13 +135,29 @@ pre{
     height: 70vh;
     width: 100%;
 }
+
 @media screen and (max-width: 1200px) {
     .imagen_fondo{
         content: url(images/image-hero-mobile.png);
+    }
+    .contenido{
+        align-items: center;
+    }
+    h1 br{
+        display: none;
+    }
+    .texto{
+        text-align: center;
+    }
+    p br{
+        display: none;
     }
     article{
         flex-direction: column-reverse;
         gap: 10vh;
         align-items: center;
+    }
+    .iconos {
+        width: 60vw;
     }
 }
