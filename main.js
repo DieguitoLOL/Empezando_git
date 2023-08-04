@@ -13,3 +13,17 @@ desplegable_Company.forEach(seleccion => {
         seleccion.nextElementSibling.classList.toggle("activar")
     })
 })
+
+//menu hamburguesa desplasable
+let menu_hamburguesa = document.querySelector(".hamburguesa");
+let menu = document.querySelector(".menu");
+
+menu_hamburguesa.addEventListener("click",  () => {
+    menu.classList.toggle("habilitar");
+    if(menu.classList.contains("habilitar")){
+        menu_hamburguesa.src= "images/icon-close-menu.svg";
+    }
+    else{
+        menu_hamburguesa.src= "images/icon-menu.svg"
+    }
+})

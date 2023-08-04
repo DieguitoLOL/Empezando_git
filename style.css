@@ -1,4 +1,4 @@
-*{
+* {
     font-family: 'Epilogue', sans-serif;
     font-weight: 700;
     margin: 0px;
@@ -6,54 +6,74 @@
     box-sizing: border-box;
     color: hsl(0, 0%, 41%);
 }
-body{
+
+body {
     background-color: rgb(244, 244, 244);
 }
-main{
+
+main {
     display: flex;
     justify-content: center;
     padding: 30px;
     width: 100%;
     height: 100%;
 }
-section{
+
+section {
     display: flex;
     flex-direction: column;
     gap: 9vh;
     width: 90%;
 }
-header{
+
+header {
     display: flex;
+    gap: 13vw;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
     justify-content: space-between;
 }
-.opciones{
+
+.opciones {
     display: flex;
-    gap: 50%;
     align-items: center;
 }
-.opciones_desplegables{
+
+.opciones_desplegables {
     display: flex;
     gap: 30%;
 }
-.selector{
+
+.selector {
     display: flex;
     user-select: none;
     gap: 10px;
     align-items: center;
     padding-bottom: 15px;
 }
-.selector p:hover{
+
+.menu_hamburguesa {
+    display: none;
+}
+
+.selector p:hover {
     color: black;
     cursor: pointer;
 }
-.selector img{
+
+.selector img {
     width: 13px;
     height: 10px;
 }
-.flecha:hover{
+
+.flecha:hover {
     cursor: pointer;
 }
-.componente{
+
+.componente {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -64,54 +84,62 @@ header{
     display: none;
 }
 
-.componente.activar{
+.componente.activar {
     display: flex;
 }
-.selector img:hover{
-    cursor: pointer;
-    content: url(images/icon-arrow-up.svg);
-} 
-.lista{
+
+
+
+.lista {
     display: flex;
     gap: 20px;
 }
-.lista p{
+
+.lista p {
     font-weight: lighter;
 }
-.Logueos{
+
+.Logueos {
     display: flex;
     user-select: none;
     gap: 30%;
 }
-.Logueos p:hover{
+
+.Logueos p:hover {
     cursor: pointer;
     color: black;
 }
-.registro{
+
+.registro {
     margin-top: -14px;
     border: 2px solid;
     border-radius: 15px;
     padding: 10px 20px 10px 20px;
 }
-article{
+
+article {
     display: flex;
     justify-content: space-around;
 }
-h1{
+
+h1 {
     color: hsl(0, 0%, 8%);
     font-size: 80px;
 }
-.texto{
+
+.texto {
     font-size: 22px;
     font-weight: lighter;
 }
-.contenido{
+
+.contenido {
     display: flex;
     flex-direction: column;
     gap: 10vh;
 }
-.boton{
-    border: 2px solid hsl(0, 0%, 8%) ;
+
+.boton {
+    border: 2px solid hsl(0, 0%, 8%);
     background-color: hsl(0, 0%, 8%);
     border-radius: 15px;
     padding: 15px 20px 15px 20px;
@@ -120,44 +148,135 @@ h1{
     user-select: none;
 }
 
-.boton:hover{
+.boton:hover {
     background-color: white;
     color: black;
     cursor: pointer;
 }
-.iconos{
+
+.iconos {
     display: flex;
+    text-align: end;
     align-items: center;
     width: 35vw;
     justify-content: space-between;
 }
-.imagen_fondo img{
+
+.imagen_fondo img {
     height: 70vh;
     width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
-    .imagen_fondo{
+
+    .menu {
+        display: none;
+        position: static;
+        position: fixed;
+        flex-direction: column;
+        top: 0px;
+        bottom: 0px;
+        width: 20vw;
+        min-height: 100vh;
+        right: 1%;
+        padding: 10px;
+        background-color: rgb(243, 243, 243);
+        justify-content: space-evenly;
+    }
+
+    .opciones_desplegables, .Logueos {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .registro {
+        margin-top: 0px;
+    }
+
+    .menu_hamburguesa {
+        display: flex;
+        position: fixed;
+        top: 1.5%;
+        width: 90%;
+        justify-content: end;
+    }
+    .habilitar{
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 70px;
+        gap: 70px;
+    }
+    .Logueos {
+        align-items: center;
+        gap: 30px;
+    }
+
+    .imagen_fondo {
         content: url(images/image-hero-mobile.png);
     }
-    .contenido{
+
+    .contenido {
         align-items: center;
     }
-    h1 br{
+
+    h1 br {
         display: none;
     }
-    .texto{
+
+    .texto {
         text-align: center;
     }
-    p br{
+
+    p br {
         display: none;
     }
-    article{
+
+    article {
         flex-direction: column-reverse;
         gap: 10vh;
         align-items: center;
     }
+
     .iconos {
         width: 60vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menu_hamburguesa {
+        top: 2.5%;
+        width: 80%;
+    }
+
+    .menu{
+        width: 35vw;
+    }
+    .imagen_fondo{
+        width: 96vw;
+    }
+    h1 {
+        font-size: 55px;
+    }
+    .texto {
+        font-size: 19px;
+    }
+    .iconos {
+        width: 80vw;
+    }
+    .iconos img{
+        width: 65px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 378px) {
+    .iconos img{
+        width: 40px;
+        height: 25px;
+    }
+    h1 {
+        font-size: 40px;
     }
 }
